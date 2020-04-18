@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset = "utf-8">
+            <title>Next ticket</title>
+        </head>
+        <body>
+            <div>{% if next %}Next ticket #{{next}}
+                 {% else %}Waiting for the next client
+                 {% endif %}
+            </div>
+            <a href = '/processing'>Back to processing</a>
+            <a href = '/menu'>Go to menu</a>
+        </body>
+    </html>

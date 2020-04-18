@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset = "utf-8">
+            <title>Get ticket</title>
+        </head>
+        <body>
+            <div>Change oil queue: {{c}}</div>
+            <div>Inflate tires queue: {{i}}</div>
+            <div>Get diagnostic queue: {{d}}</div>
+            <form method="post">{% csrf_token %}
+                <button type="submit">Process next</button>
+            </form>
+        </body>
+    </html>
